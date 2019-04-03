@@ -1,0 +1,4 @@
+Starting price: $10.00
+On day 1 price is $9.99
+On day 2 price is $39.90
+On day 3 price is $258.33
