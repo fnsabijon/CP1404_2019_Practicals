@@ -11,7 +11,7 @@ def main():
 
     for i in range(number_of_picks):
         picks = []
-        for num in range(NUMBER_OF_DRAWS):
+        for j in range(NUMBER_OF_DRAWS):
             number = random.randint(MIN, MAX)
             if number in picks:
                 number = random.randint(MIN, MAX)
