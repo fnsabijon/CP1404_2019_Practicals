@@ -8,9 +8,8 @@ for word in words:
     count = word_occurences.get(word, 0)
     word_occurences[word] = count + 1
 
-words = []
-for key in word_occurences:
-    words.append(key)
+words = list(word_occurences.keys())
+words = [word for word in word_occurences]
 words.sort()
 print(words)
 

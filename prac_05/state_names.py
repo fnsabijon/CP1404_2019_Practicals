@@ -8,8 +8,8 @@ File needs reformatting
 STATE_NAMES = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern Territory", "WA": "Western Australia",
                "ACT": "Australian Capital Territory", "VIC": "Victoria", "TAS": "Tasmania"}
 
-for key, value in STATE_NAMES.items():
-    print("{:3} is {:3}".format(key, value))
+for state_abbreviation, state_complete in STATE_NAMES.items():
+    print("{:3} is {:3}".format(state_abbreviation, state_complete))
 
 state = input("Enter short state: ").upper()
 while state != "":
