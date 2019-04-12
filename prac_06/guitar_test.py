@@ -6,11 +6,11 @@ guitar_3 = Guitar("Taylor", 1968, 5000)
 
 guitars = [guitar_1, guitar_2, guitar_3]
 
-print("Expect gibson, tanglewood, and taylor to be 68, 28, and 50 years old respectively. Only Tanglewood is not vintage")
+print("Expect gibson, tanglewood, and taylor to be 69, 29, and 51 years old respectively. Only Tanglewood is not vintage")
 print("\nTest results:")
 
 for guitar in guitars:
-    age = guitar.get_age(2018)
+    age = guitar.get_age()
     is_vintage = guitar.is_vintage()
     print("{} is {} years old".format(guitar.name, age))
     if is_vintage:
