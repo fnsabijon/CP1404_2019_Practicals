@@ -18,3 +18,5 @@ while state != "":
     else:
         print("Invalid short state")
     state = input("Enter short state: ")
+
+

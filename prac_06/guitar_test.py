@@ -11,9 +11,8 @@ print("\nTest results:")
 
 for guitar in guitars:
     age = guitar.get_age()
-    is_vintage = guitar.is_vintage()
     print("{} is {} years old".format(guitar.name, age))
-    if is_vintage:
+    if guitar.is_vintage():
         print("{} is vintage".format(guitar.name))
     else:
         print("{} is not vintage".format(guitar.name))
