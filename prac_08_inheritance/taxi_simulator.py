@@ -19,21 +19,18 @@ def main():
             display_taxis(taxis)
             current_taxi = taxis[int(input("Choose taxi: "))]
             print(BILL_TO_DATE.format(bill_to_date))
-            print(MENU)
-            choice = input(CHOICE_PROMPT).upper()
 
-        if choice == "D":
+        elif choice == "D":
             distance = int(input("Drive how far? "))
             current_taxi.start_fare()
             current_taxi.drive(distance)
             bill_to_date += current_taxi.get_fare()
             print("Your {} trip cost you: ${:.2f}".format(current_taxi.name, current_taxi.get_fare()))
             print(BILL_TO_DATE.format(bill_to_date))
-            print(MENU)
-            choice = input(CHOICE_PROMPT).upper()
         else:
-            print(MENU)
-            choice = input(CHOICE_PROMPT).upper()
+            print("invalid menu")
+        print(MENU)
+        choice = input(CHOICE_PROMPT).upper()
 
 def display_taxis(taxis):
     print("Taxis available:")

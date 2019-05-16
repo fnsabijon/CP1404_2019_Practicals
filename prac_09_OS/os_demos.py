@@ -59,11 +59,10 @@ def demo_walk():
     print("MY TEST")
     for directory_name, subdirectories, filenames in os.walk('.'):
         for filename in filenames:
-            path_name = os.path.join(directory_name, filename)
-            new_name = get_fixed_filename(filename)
-            os.rename(path_name, new_name)
+            new_name = os.path.join(directory_name, get_fixed_filename(filename))
+            os.rename(os.path.join(directory_name, filename), new_name)
             print("{} has been renamed to {}".format(filename, new_name))
-
+            # print(new_name)
 
 # main()
 demo_walk()
